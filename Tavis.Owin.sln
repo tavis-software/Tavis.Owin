@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavis.OwinService", "Tavis.OwinService\Tavis.OwinService.csproj", "{48F0FB3D-2CFD-450F-A24E-541A490AE73D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavis.Owin.WebApi", "Tavis.Owin.WebApi\Tavis.Owin.WebApi.csproj", "{2F38B84E-08F3-4F0F-BF3F-9A69C36DF98B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavis.Owin.Tests", "Tavis.Owin.Tests\Tavis.Owin.Tests.csproj", "{42788A78-3543-43DB-9912-0C1181067CA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleService", "SampleService\SampleService.csproj", "{0D568BA9-00BD-41DE-8935-FE9A526B4476}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{752AFDC4-6238-40B7-944A-C792F4A5D68C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleService", "SampleService", "{61AB4456-5272-447F-90B5-DB494F85E4A4}"
+	ProjectSection(SolutionItems) = preProject
+		build\SampleService\ChocolateyInstall.ps1 = build\SampleService\ChocolateyInstall.ps1
+		build\SampleService\ChocolateyUninstall.ps1 = build\SampleService\ChocolateyUninstall.ps1
+		build\SampleService\SampleService.nuspec = build\SampleService\SampleService.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48F0FB3D-2CFD-450F-A24E-541A490AE73D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F0FB3D-2CFD-450F-A24E-541A490AE73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F0FB3D-2CFD-450F-A24E-541A490AE73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F0FB3D-2CFD-450F-A24E-541A490AE73D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F38B84E-08F3-4F0F-BF3F-9A69C36DF98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F38B84E-08F3-4F0F-BF3F-9A69C36DF98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F38B84E-08F3-4F0F-BF3F-9A69C36DF98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F38B84E-08F3-4F0F-BF3F-9A69C36DF98B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42788A78-3543-43DB-9912-0C1181067CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42788A78-3543-43DB-9912-0C1181067CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42788A78-3543-43DB-9912-0C1181067CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42788A78-3543-43DB-9912-0C1181067CA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D568BA9-00BD-41DE-8935-FE9A526B4476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D568BA9-00BD-41DE-8935-FE9A526B4476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D568BA9-00BD-41DE-8935-FE9A526B4476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D568BA9-00BD-41DE-8935-FE9A526B4476}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61AB4456-5272-447F-90B5-DB494F85E4A4} = {752AFDC4-6238-40B7-944A-C792F4A5D68C}
+	EndGlobalSection
+EndGlobal
