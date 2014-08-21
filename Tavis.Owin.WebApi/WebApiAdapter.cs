@@ -20,8 +20,8 @@ namespace Tavis.Owin
                 {
                     MessageHandler = app,
                     BufferPolicySelector = new OwinBufferPolicySelector(),
-                    ExceptionLogger = new WebApiExceptionLogger(),
-                    ExceptionHandler = new WebApiExceptionHandler()
+                    ExceptionLogger = config.Services.GetService(typeof(IExceptionLogger)) as IExceptionLogger ?? new WebApiExceptionLogger(),
+                    ExceptionHandler = config.Services.GetService(typeof(IExceptionHandler)) as IExceptionHandler ?? new WebApiExceptionHandler()
                 };
             }
             var handler = new HttpMessageHandlerAdapter(null, options);
