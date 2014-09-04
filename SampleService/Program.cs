@@ -17,6 +17,7 @@ namespace SampleService
             //var ts = new TraceSource("Foo");
             //ts.TraceInformation("Hello world");
             //ts.Flush();
+            Console.WriteLine("Starting service on http://localhost:1002/");
             var service = new OwinServiceHost(new Uri("http://localhost:1002/"), simpleApp)
             {
                 ServiceName = "SampleService",
