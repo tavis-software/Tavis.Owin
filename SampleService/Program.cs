@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Http;
 using Tavis.Owin;
 using Topshelf.Logging;
 using appFunc = System.Func<System.Collections.Generic.IDictionary<string,object>,System.Threading.Tasks.Task>;
@@ -12,7 +13,7 @@ namespace SampleService
 {
     class Program
     {
-        static void Main(string[] args)
+        static void xMain(string[] args)
         {
             //var ts = new TraceSource("Foo");
             //ts.TraceInformation("Hello world");
@@ -27,6 +28,23 @@ namespace SampleService
             service.Initialize();
             
         }
+
+        static void Main(string[] args)
+        {
+            var config = new HttpConfiguration();
+
+
+            Console.WriteLine("Starting service on http://localhost:1002/");
+            var service = new OwinServiceHost(new Uri("http://localhost:1002/"), WebApiAdapter.CreateWebApiAppFunc(config))
+            {
+                ServiceName = "SampleService",
+                ServiceDisplayName = "Sample Service",
+                ServiceDescription = "A sample service"
+            };
+            service.Initialize();
+
+        }
+
 
         private static appFunc simpleApp = (env) =>
         {
