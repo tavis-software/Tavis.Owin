@@ -63,7 +63,7 @@ namespace Tavis.Owin
 
         private void Configure(HostConfigurator x)
         {
-            HostLogger.UseLogger(new TraceHostLoggerConfigurator());
+            //HostLogger.UseLogger(new TraceHostLoggerConfigurator());  Do this outside the class
             x.Service(settings => this);
             
             x.BeforeInstall(BeforeInstall);
